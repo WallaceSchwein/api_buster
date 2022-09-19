@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}McMakler - API-Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <h1>McMakler - BeraterDashboard</h1>
+    </div>
+    <div>
+        <h3>Bitte geben Sie ihre Vorgangsnummer ein und wählen Sie die benötigten Anbieter-Plattformen aus.</h3>
+    </div>
+</div>
+<form method="POST">
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text col-2" id="ops-no-label">Vorgangsnummer:</span>
+        <input type="text"
+               class="form-control col-4"
+               name="ops-no"
+               placeholder="Vorgangsnummer beim Anbieter, von dem die Daten übermittelt werden sollen."
+               aria-label="Input field for operational number"
+               aria-describedby="ops-no-label">
+    </div>
+    <div class="container overflow-hidden">
+        <div class="row gy-5">
+            <div class="col-6">
+                <div class="p-3">
+                    Kundendatenladen von:
+                </div>
+                <div class="form-check">
+                    <input type="radio"
+                           class="form-check-input"
+                           id="ehyp-init"
+                           name="init-check"
+                           value="ehyp"
+                           onclick=radioDependency(this)
+                           aria-checked="mixed">
+                    <label class="form-check-label" for="init-1">
+                        eHyp
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio"
+                           class="form-check-input"
+                           id="qp-init"
+                           name="init-check"
+                           value="qp"
+                           onclick=radioDependency(this)
+                           aria-checked="mixed">
+                    <label class="form-check-label" for="init-2">
+                        Qualitypool
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio"
+                           class="form-check-input"
+                           id="bfx-init"
+                           name="init-check"
+                           value="bfx"
+                           onclick=radioDependency(this)
+                           aria-checked="mixed">
+                    <label class="form-check-label" for="init-3">
+                        BAUFINEX
+                    </label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3">
+                    Übertragen zu:
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox"
+                           class="form-check-input"
+                           id="ehyp-to"
+                           name="ehyp-to"
+                           value="clicked"
+                           aria-checked="mixed">
+                    <label class="form-check-label" for="to-1">
+                        eHyp
+                    </label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox"
+                           class="form-check-input"
+                           id="qp-to"
+                           name="qp-to"
+                           value="clicked"
+                           aria-checked="mixed">
+                    <label class="form-check-label" for="to-2">
+                        Qualitypool
+                    </label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox"
+                           class="form-check-input"
+                           id="bfx-to"
+                           name="bfx-to"
+                           value="clicked"
+                           aria-checked="mixed">
+                    <label class="form-check-label" for="to-3">
+                        BAUFINEX
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-dark mcmakler-color" type="submit">Kundendaten übermitteln</button>
+        </div>
+        <div class="menu-right">
+            <a class="btn btn-link" href="/changepwd">Passwort ändern</a>
+            <span class="link-seperator">|</span>
+            <a class="btn btn-link" href="/logout">Logout</a>
+        </div>
+    </div>
+</form>
+{% endblock %}

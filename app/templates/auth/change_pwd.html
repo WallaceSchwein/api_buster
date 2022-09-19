@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}McMakler - Passwort ändern{% endblock %}
+
+{% block content %}
+<div>
+    <h1 class="col-12">Passwort ändern</h1>
+</div>
+<div>
+    <h3>Geben Sie zunächst Ihr altes Passwort ein</h3>
+    <h4 id="h4-pwd">Ihr neues Passwort muss einen Großbuchstaben, sowie eine Zahl und ein Sonderzeichen enthalten.</h5>
+</div>
+<form method="POST">
+    <div class="container-fluid">
+        <div class="input-group flex-nowrap col-6">
+            <span class="input-group-text col-3">Altes Passwort</span>
+            <input type="password"
+                   class="form-control col-4 hide"
+                   name="old-pwd"
+                   placeholder="Ihr bisheriges Passwort"
+                   aria-label="old-pwd"
+                   aria-describedby="Input for old password">
+        </div>
+        <div class="input-group flex-nowrap col-6">
+            <span class="input-group-text col-3">Neues Passwort</span>
+            <input type="password"
+                   class="form-control col-4 hide"
+                   name="new-pwd"
+                   placeholder="Wählen Sie ein neues Passwort" 
+                   aria-label="new-pwd"
+                   aria-describedby="Input for new password">
+        </div>
+        <div class="input-group flex-nowrap col-6">
+            <span class="input-group-text col-3">Neues Passwort</span>
+            <input type="password"
+                   class="form-control col-4 hide"
+                   name="pwd-confirm"
+                   placeholder="Bestätigen Sie das neue Passwort" 
+                   aria-label="pwd-confirm"
+                   aria-describedby="Input for new password confirmation">
+        </div>
+        <div>
+            <button class="btn btn-primary mcmakler-color" type="submit">
+                Passwort ändern
+            </button>
+        </div>
+        <div class="menu-right">
+            <a class="btn btn-link" href="/">API-Dashboard</a>
+            <span class="link-seperator">|</span>
+            <a class="btn btn-link" href="/logout">Logout</a>
+        </div>
+    </div>
+</form>
+{% endblock %}

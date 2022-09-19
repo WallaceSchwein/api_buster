@@ -1,0 +1,345 @@
+{% extends "base.html" %}
+{% block title %}McMakler - Admin-Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <h1>McMakler - AdminDashboard</h1>
+    </div>
+    <div>
+        <h3>Hier haben Sie die Möglichkeit einen bestehenden User zu bearbeiten oder einen neuen User anzulegen.</h3>
+    </div>
+</div>
+<form method="POST">
+    <div class="accordion" id="adminAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne">
+                    <h4>Nutzer anlegen</h4>
+                </button>
+            </h2>
+            <div id="collapseOne"
+                class="accordion-collapse collapse {{ 'show' if create_user == 'creating' }}"
+                aria-labelledby="headingOne"
+                data-bs-parent="#adminAccordion">
+                <div class="accordion-body">
+                    <div class="container overflow-hidden">
+                        <div class="row gy-5">
+                            <div class="col-12">
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-3" id="addon-wrapping">McMakler Berater E-Mail:</span>
+                                    <input type="text"
+                                            class="form-control col-9"
+                                            name="mail"
+                                            placeholder="Die McMakler-Email des Beraters, für den ein Account angelegt werden soll. (Hieraus wird die Nutzer-ID generiert.)"
+                                            aria-label="mail"
+                                            aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-6 add-user-form">
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">eHyp Token:</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="ehyp-token-add"
+                                           placeholder="Token für eHyp"
+                                           aria-label="ehyp-token-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">Qualitypool ID:</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="qp-id-add"
+                                           placeholder="ID für Qualitypool"
+                                           aria-label="qp-id-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">Qualitypool Secret:</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="qp-sec-add"
+                                           placeholder="Secret für Qualitypool"
+                                           aria-label="qp-sec-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">Berater ID (QP):</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="con-id-qp-add"
+                                           placeholder="Berater ID für Qualitypool"
+                                           aria-label="con-id-qp-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-6 add-user-form">
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">Region:</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="region-add"
+                                           placeholder="Region des Beraters"
+                                           aria-label="region-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">BAUFINEX ID:</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="bfx-id-add"
+                                           placeholder="ID für BAUFINEX"
+                                           aria-label="bfx-id-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">BAUFINEX Secret:</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="bfx-sec-add"
+                                           placeholder="Secret für BAUFINEX"
+                                           aria-label="bfx-sec-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-4" id="addon-wrapping">Berater ID (BFX):</span>
+                                    <input type="text"
+                                           class="form-control col-2"
+                                           name="con-id-bfx-add"
+                                           placeholder="Berater ID für BAUFINEX"
+                                           aria-label="con-id-bfx-add"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit"
+                                class="btn btn-primary mcmakler-color"
+                                name="create-user"
+                                value="clicked">
+                            Nutzer anlegen
+                        </button>
+                        <div class="modal fade {{ 'show' if show_modal }}"
+                             {% if show_modal %}
+                             style="display: block;" 
+                             {% endif %}
+                             id="exampleModal"
+                             tabindex="-1"
+                             aria-labelledby="exampleModalLabel"
+                             aria-hidden="{{ 'false' if show_modal else 'true' }}"
+                             aria-modal="{{ 'true' if show_modal else 'false' }}"
+                             role="{{ 'dialog' if show_modal }}">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Neuer Nutzer wurde angelegt.</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Bitte notieren Sie sich die User-ID.
+                                        </p>
+                                        <div>
+                                            <ul class=" container-fluid">
+                                                <h5>Generierte User-ID:</h5>
+                                                <d><mark>{{ new_id }}</mark></d>
+                                            </ul>
+                                            <ul class="container-fluid">
+                                                <h5>Inititalpasswort:</h5>
+                                                <d><mark>change.quickly</mark></d>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                            Das Initialpasswort sollte der nun registrierte McMakler-Berater nach dem ersten LogIn ändern.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit"
+                                                class="btn btn-secondary mcmakler-color"
+                                                name="close-created"
+                                                data-bs-dismiss="modal"
+                                                value="clicked">
+                                            Schließen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button {{ 'collapsed' if edit_user != 'editing' }}"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo">
+                    <h4>Nutzerdaten bearbeiten</h4>
+                </button>
+            </h2>
+            <div id="collapseTwo"
+                 class="accordion-collapse collapse {{ 'show' if edit_user == 'editing' }}"
+                 aria-labelledby="headingTwo"
+                 data-bs-parent="#adminAccordion">
+                <div class="accordion-body">
+                    <h5>Bitte geben Sie die User-ID des McMakler-Beraters ein, dessen Daten Sie ändern möchten.</h5>
+                    <div class="container overflow-hidden">
+                        <div class="row gy-5">
+                            <div class="col-6">
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text col-2" id="addon-wrapping">User-ID:</span>
+                                    <input type="text"
+                                           class="form-control col-4"
+                                           id="to-freeze"
+                                           name="user-id"
+                                           placeholder="User-ID"
+                                           value="{{ user_id_set }}"
+                                           aria-label="user-id"
+                                           aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="flex-nowrap" id="reset-box">
+                                    <button type="submit"
+                                            class="btn btn-primary mcmakler-color"
+                                            name="reset-form"
+                                            value="clicked">
+                                        Zurück setzen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-primary mcmakler-color"
+                            name="edit-user"
+                            value="clicked">
+                        Nutzer bearbeiten
+                    </button>
+                        <div class="container overflow-hidden">
+                            <div class="row gy-5">
+                                <div class="col-6">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">eHyp Token:</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="ehyp-token-up"
+                                               placeholder="Token für eHyp"
+                                               value="{{ ehyp_token_set }}"
+                                               aria-label="ehyp-token-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">Qualitypool ID:</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="qp-id-up"
+                                               placeholder="ID für Qualitypool"
+                                               value="{{ qp_id_set }}"
+                                               aria-label="qp-id-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">Qualitypool Secret:</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="qp-sec-up"
+                                               placeholder="Secret für Qualitypool"
+                                               value="{{ qp_sec_set }}"
+                                               aria-label="qp-sec-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">Berater ID (QP):</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="con-id-qp-up"
+                                               placeholder="Berater ID für Qualitypool"
+                                               value="{{ con_id_qp_set }}"
+                                               aria-label="con-id-qp-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">Region:</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="region-up"
+                                               placeholder="Region des Beraters"
+                                               value="{{ region_set }}"
+                                               aria-label="region-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">BAUFINEX ID:</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="bfx-id-up"
+                                               placeholder="ID für BAUFINEX"
+                                               value="{{ bfx_id_set }}"
+                                               aria-label="bfx-id-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">BAUFINEX Secret:</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="bfx-sec-up"
+                                               placeholder="Secret für BAUFINEX"
+                                               value="{{ bfx_sec_set }}"
+                                               aria-label="bfx-sec-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text col-4" id="addon-wrapping">Berater ID (BFX):</span>
+                                        <input type="text"
+                                               class="form-control col-2"
+                                               name="con-id-bfx-up"
+                                               placeholder="Berater ID für BAUFINEX"
+                                               value="{{ con_id_bfx_set }}"
+                                               aria-label="con-id-bfx-up"
+                                               aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <button type="submit"
+                                class="btn btn-primary mcmakler-color button-split"
+                                name="update-user"
+                                value="clicked">
+                            Nutzerdaten ändern
+                        </button>
+                        <button type="submit"
+                                class="btn btn-primary mcmakler-color split-button"
+                                name="delete-user"
+                                value="clicked">
+                            Nutzer löschen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="menu-right">
+    <a class="btn btn-link" href="/changepwd">Passwort ändern</a>
+    <span class="link-seperator">|</span>
+    <a class="btn btn-link" href="/logout">Logout</a>
+</div>
+<script>
+    let userId = document.getElementById("to-freeze").value;
+
+    if (userId !== "") {
+        document.getElementById('to-freeze').readOnly = true;
+    }
+</script>
+{% endblock %}

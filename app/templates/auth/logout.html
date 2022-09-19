@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}mcmakler - Logout-seite{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="col-12">Sie haben sich erfolgreiche ausgeloggt</h1>
+        <p>um sich erneut einzuloggen geben sie bitte ihre <mark>userid</mark> an, so wie ihr <mark>passwort</mark>.</p>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text col-2" id="addon-wrapping">user-id</span>
+            <input type="text" class="form-control col-4" placeholder="user-id" aria-label="username" aria-describedby="addon-wrapping">
+        </div>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text col-2" id="addon-wrapping">user-passwort</span>
+            <input type="text" class="form-control col-4" placeholder="user-placeholder" aria-label="username" aria-describedby="addon-wrapping">
+        </div>
+        <div>
+            <div>
+                <button type="button" class="btn btn-dark">login</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-link">hier geht's zum admin-login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+></script>
+{% endblock %}

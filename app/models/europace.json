@@ -1,0 +1,1134 @@
+{
+    "importMetadaten": {
+        "betreuung": {
+            "kundenbetreuer": null,
+            "bearbeiter": null
+        },
+        "datenkontext": "TEST_MODUS",
+        "externeVorgangsId": null,
+        "importquelle": null,
+        "leadtracking": {
+            "kampagne": null,
+            "keyword": null,
+            "trackingId": null
+        },
+        "zusaetzlicherEreignistext": null,
+        "prioritaet": null
+    },
+    "kundenangaben": {
+        "haushalte": [
+            {
+                "kunden": [
+                    {
+                        "externeKundenId": null,
+                        "referenzId": null,
+                        "personendaten": {
+                            "person": {
+                                "titel": {
+                                    "prof": null,
+                                    "dr": null
+                                },
+                                "anrede": null,
+                                "vorname": null,
+                                "nachname": null
+                            },
+                            "geburtsdatum": null,
+                            "geburtsort": null,
+                            "staatsangehoerigkeit": null,
+                            "familienstand": {
+                                "@type": null,
+                                "guetertrennungVereinbart": null
+                            }
+                        },
+                        "wohnsituation": {
+                            "wohnhaftSeit": null,
+                            "anschrift": {
+                                "strasse": null,
+                                "hausnummer": null,
+                                "plz": null,
+                                "ort": null
+                            },
+                            "voranschrift": {
+                                "strasse": null,
+                                "hausnummer": null,
+                                "plz": null,
+                                "ort": null
+                            }
+                        },
+                        "finanzielles": {
+                            "steuerId": null,
+                            "beschaeftigung": {
+                                "@type": null,
+                                "beruf": null,
+                                "situationNachRenteneintritt": {
+                                    "rentenbeginn": null,
+                                    "gesetzlicheRenteMonatlich": null,
+                                    "privateRenteMonatlich": null,
+                                    "sonstigesEinkommenMonatlich": null
+                                },
+                                "beschaeftigungsverhaeltnis": {
+                                    "arbeitgeber": {
+                                        "name": null,
+                                        "inDeutschland": null,
+                                        "inDeutschlandKommentar": null
+                                    },
+                                    "probezeit": null,
+                                    "anzahlGehaelterProJahr": null,
+                                    "beschaeftigtSeit": null
+                                },
+                                "beschaeftigungsstatus": null
+                            },
+                            "einkommenNetto": null,
+                            "riesterangaben": {
+                                "bruttojahreseinkommenErwartet": null,
+                                "bruttovorjahreseinkommen": null,
+                                "sozialversicherungsnummer": null
+                            }
+                        },
+                        "kontakt": {
+                            "telefonnummer": {
+                                "vorwahl": null,
+                                "nummer": null
+                            },
+                            "email": null,
+                            "weitereKontaktmoeglichkeiten": null
+                        },
+                        "zusatzangaben": {
+                            "branche": null,
+                            "legitimationsdaten": {
+                                "ausstellendeBehoerde": null,
+                                "ausstellungsdatum": null,
+                                "ausweisart": {
+                                    "@type": null
+                                },
+                                "ausweisnummer": null
+                            },
+                            "zusatzangabenProProduktanbieter": [
+                                {
+                                    "@type": null,
+                                    "berufsgruppe": null,
+                                    "branche": null,
+                                    "geburtsland": null,
+                                    "privateKrankenversicherungMonatlicheAusgaben": null
+                                },
+                                {
+                                    "@type": null,
+                                    "branche": null
+                                },
+                                {
+                                    "@type": null,
+                                    "beschaeftigungImOeffentlichenDienst": null,
+                                    "bruttoVorjahresEinkommen": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "externeKundenId": null,
+                        "referenzId": null,
+                        "personendaten": {
+                            "person": {
+                                "titel": {
+                                    "prof": null,
+                                    "dr": null
+                                },
+                                "anrede": null,
+                                "vorname": null,
+                                "nachname": null
+                            },
+                            "geburtsdatum": null,
+                            "geburtsort": null,
+                            "staatsangehoerigkeit": null,
+                            "nichtEuBuerger": {
+                                "inDeutschlandSeit": null,
+                                "aufenthaltstitel": {
+                                    "@type": null,
+                                    "befristetBis": null,
+                                    "arbeitserlaubnis": {
+                                        "@type": null,
+                                        "befristetBis": null
+                                    }
+                                }
+                            },
+                            "familienstand": {
+                                "@type": null
+                            }
+                        },
+                        "wohnsituation": {
+                            "wohnhaftSeit": null,
+                            "anschrift": {
+                                "strasse": null,
+                                "hausnummer": null,
+                                "plz": null,
+                                "ort": null
+                            },
+                            "voranschrift": {
+                                "strasse": null,
+                                "hausnummer": null,
+                                "plz": null,
+                                "ort": null
+                            }
+                        },
+                        "finanzielles": {
+                            "steuerId": null,
+                            "beschaeftigung": {
+                                "@type": null,
+                                "beruf": null,
+                                "situationNachRenteneintritt": {
+                                    "rentenbeginn": null,
+                                    "gesetzlicheRenteMonatlich": null,
+                                    "privateRenteMonatlich": null,
+                                    "sonstigesEinkommenMonatlich": null
+                                },
+                                "beschaeftigungsverhaeltnis": {
+                                    "arbeitgeber": {
+                                        "name": null,
+                                        "inDeutschland": null,
+                                        "inDeutschlandKommentar": null
+                                    },
+                                    "probezeit": null,
+                                    "anzahlGehaelterProJahr": null,
+                                    "beschaeftigtSeit": null
+                                },
+                                "beschaeftigungsstatus": null
+                            },
+                            "einkommenNetto": null,
+                            "riesterangaben": {
+                                "bruttojahreseinkommenErwartet": null,
+                                "bruttovorjahreseinkommen": null,
+                                "sozialversicherungsnummer": null
+                            }
+                        },
+                        "kontakt": {
+                            "telefonnummer": {
+                                "vorwahl": null,
+                                "nummer": null
+                            },
+                            "email": null,
+                            "weitereKontaktmoeglichkeiten": null
+                        },
+                        "zusatzangaben": {
+                            "branche": null,
+                            "legitimationsdaten": {
+                                "ausweisart": {
+                                    "@type": null,
+                                    "typ": null
+                                },
+                                "ausstellungsdatum": null,
+                                "ausstellendeBehoerde": null,
+                                "ausweisnummer": null
+                            },
+                            "zusatzangabenProProduktanbieter": [
+                                {
+                                    "@type": null,
+                                    "berufsgruppe": null,
+                                    "branche": null,
+                                    "privateKrankenversicherungMonatlicheAusgaben": null,
+                                    "geburtsland": null,
+                                    "weitereStaatsangehoerigkeiten": [
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "@type": null,
+                                    "branche": null
+                                },
+                                {
+                                    "@type": null,
+                                    "bruttoVorjahresEinkommen": null,
+                                    "beschaeftigungImOeffentlichenDienst": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "kinder": [
+                    {
+                        "name": null,
+                        "geburtsdatum": null,
+                        "kindergeldWirdBezogen": null,
+                        "unterhalt": null,
+                        "kundenreferenzIdRiesterzuordnung": null
+                    },
+                    {
+                        "name": null,
+                        "geburtsdatum": null,
+                        "kindergeldWirdBezogen": null,
+                        "unterhalt": null,
+                        "kundenreferenzIdRiesterzuordnung": null
+                    }
+                ],
+                "finanzielleSituation": {
+                    "bestehendeImmobilien": [
+                        {
+                            "bezeichnung": null,
+                            "marktwert": null,
+                            "immobilie": {
+                                "adresse": {
+                                    "strasse": null,
+                                    "hausnummer": null,
+                                    "plz": null,
+                                    "ort": null
+                                },
+                                "typ": {
+                                    "@type": null,
+                                    "grundstuecksgroesse": null,
+                                    "gebaeude": {
+                                        "baujahr": null,
+                                        "bauweise": null,
+                                        "anzahlGeschosse": null,
+                                        "zustand": null,
+                                        "ausstattung": null,
+                                        "nutzung": {
+                                            "wohnen": {
+                                                "gesamtflaeche": null,
+                                                "nutzungsart": {
+                                                    "@type": null,
+                                                    "mieteinnahmenNettoKaltMonatlich": null
+                                                }
+                                            },
+                                            "gewerbe": {
+                                                "gesamtflaeche": null,
+                                                "nutzungsart": {
+                                                    "@type": null
+                                                }
+                                            }
+                                        },
+                                        "modernisierung": {
+                                            "jahr": null,
+                                            "grad": null
+                                        }
+                                    },
+                                    "miteigentumsanteil": {
+                                        "anteil": null,
+                                        "gesamt": null
+                                    },
+                                    "anzahlDerWohneinheitenImObjekt": null,
+                                    "anzahlDerGewerbeeinheitenImObjekt": null,
+                                    "bezeichnungWohneinheit": null
+                                },
+                                "stellplaetze": [
+                                    {
+                                        "typ": null,
+                                        "mieteMonatlich": null
+                                    }
+                                ],
+                                "erbbaurecht": {
+                                    "erbbauzinsJaehrlich": null,
+                                    "grundstueckseigentuemer": null,
+                                    "laufzeitBis": null
+                                },
+                                "grundbuchangabe": {
+                                    "ort": null,
+                                    "blatt": null,
+                                    "amtsgericht": null,
+                                    "flurstuecke": [
+                                        {
+                                            "flur": null,
+                                            "flurstueck": null,
+                                            "anteil": {
+                                                "anteil": null,
+                                                "gesamt": null
+                                            },
+                                            "groesse": null
+                                        }
+                                    ],
+                                    "rechteInAbteilung2": {
+                                        "betrag": null,
+                                        "beschreibung": null
+                                    },
+                                    "anmerkungen": null
+                                },
+                                "zusatzangaben": {
+                                    "beleihungswertangaben": {
+                                        "marktueblicherKaufpreisProQm": null,
+                                        "keinBaulandFlaeche": null,
+                                        "bodenrichtwert": null,
+                                        "wohnlage": null,
+                                        "kubatur": null,
+                                        "vergleichsmieteFuerWohnflaecheProQm": null,
+                                        "vergleichsmieteFuerGewerbeflaecheProQm": null
+                                    },
+                                    "effektivzinsErhoehendeKosten": {
+                                        "wohngebaeudeversicherungskostenJaehrlich": null,
+                                        "grundbucheintragungskostenEinmalig": null,
+                                        "sonstigeKosten": {
+                                            "bezeichnung": null,
+                                            "betragEinmalig": null
+                                        }
+                                    },
+                                    "modernisierung": {
+                                        "kernsanierung": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "dacherneuerung": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "fenster": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "rohrleitungen": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "heizung": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "waermedaemmung": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "baeder": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "innenausbau": {
+                                            "jahr": null,
+                                            "grad": null
+                                        },
+                                        "raumaufteilung": {
+                                            "jahr": null,
+                                            "grad": null
+                                        }
+                                    },
+                                    "zusatzangabenProProduktanbieter": [
+                                        {
+                                            "@type": null,
+                                            "beleihungsobjekt": {
+                                                "@type": null,
+                                                "geschosslage": null,
+                                                "gebaude": {
+                                                    "ausstattung": null,
+                                                    "kellerausbau": null,
+                                                    "aufzugVorhanden": null,
+                                                    "modernisierungsangaben": {
+                                                        "bodenWandTreppe": null,
+                                                        "heizungZentral": null,
+                                                        "fenster": null,
+                                                        "dach": null,
+                                                        "badWc": null,
+                                                        "stromAbwasserHeizkoerper": null,
+                                                        "waermedaemmung": null,
+                                                        "raumaufteilung": null
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "@type": null,
+                                            "vorlaeufigerVerkehrswert": null
+                                        },
+                                        {
+                                            "@type": null,
+                                            "anpassungenNachBelWertV": {
+                                                "beleihungswertangaben": {
+                                                    "allgemeineWertermittlung": {
+                                                        "restnutzungsdauerInJahren": null,
+                                                        "abzugZurWerteanpassung": {
+                                                            "betrag": null,
+                                                            "grund": null
+                                                        },
+                                                        "sicherheitsabschlag": null,
+                                                        "eigennutzungsfaehigkeit": null,
+                                                        "stellplatz": null,
+                                                        "carport": null,
+                                                        "garage": null,
+                                                        "tiefgarage": null
+                                                    },
+                                                    "erbbaurecht": {
+                                                        "liegenschaftszins": null,
+                                                        "gebaeudeEntschaedigungBeiAblauf": null
+                                                    }
+                                                },
+                                                "sachwertErmittlung": {
+                                                    "aussenanlagen": null,
+                                                    "baunebenkosten": null,
+                                                    "regionalfaktor": null,
+                                                    "sachwertfaktorNachhaltigkeitsfaktor": null
+                                                },
+                                                "ertragswertErmittlung": {
+                                                    "wohnwirtschaftlich": {
+                                                        "angaben": {
+                                                            "liegenschaftszins": null,
+                                                            "kapitalisierungszins": null,
+                                                            "verwaltungskosten": null,
+                                                            "instandhaltungskosten": null,
+                                                            "mietausfallwagnis": null,
+                                                            "nichtUmlagefaehigeBetriebskosten": null,
+                                                            "modernisierungsrisiko": null
+                                                        },
+                                                        "bewirtschaftungskostenGarage": null,
+                                                        "bewirtschaftungskostenStellplaetze": null
+                                                    },
+                                                    "gewerblich": {
+                                                        "liegenschaftszins": null,
+                                                        "kapitalisierungszins": null,
+                                                        "verwaltungskosten": null,
+                                                        "instandhaltungskosten": null,
+                                                        "mietausfallwagnis": null,
+                                                        "nichtUmlagefaehigeBetriebskosten": null,
+                                                        "modernisierungsrisiko": null
+                                                    }
+                                                },
+                                                "begruendungFuerAenderungen": null
+                                            }
+                                        },
+                                        {
+                                            "@type": null,
+                                            "bewirtschaftungskostenJaehrlich": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "darlehensliste": [
+                                {
+                                    "@type": null,
+                                    "grundschuldart": null,
+                                    "darlehensgeber": {
+                                        "@type": null,
+                                        "produktanbieter": null
+                                    },
+                                    "grundschuld": null,
+                                    "darlehensbetrag": null,
+                                    "rateMonatlich": null,
+                                    "sollzins": null,
+                                    "zinsbindungBis": null,
+                                    "laufzeitende": null,
+                                    "restschuld": {
+                                        "aktuell": null,
+                                        "zumAbloesetermin": null
+                                    },
+                                    "darlehenskontonummer": null
+                                }
+                            ],
+                            "kommentar": null,
+                            "einsatz": null,
+                            "maximalEinzusetzenderBetragBeiVerkauf": null
+                        }
+                    ],
+                    "vermoegen": {
+                        "summeBankUndSparguthaben": {
+                            "guthaben": null,
+                            "zinsertragJaehrlich": null,
+                            "verwendung": {
+                                "@type": null,
+                                "maximalEinzusetzenderBetrag": null,
+                                "kommentar": null
+                            }
+                        },
+                        "summeSparplaene": {
+                            "aktuellerWert": null,
+                            "betragMonatlich": null,
+                            "verwendung": {
+                                "@type": null,
+                                "kommentar": null
+                            }
+                        },
+                        "summeDepotvermoegen": {
+                            "depotwert": null,
+                            "verwendung": {
+                                "@type": null,
+                                "maximalEinzusetzenderBetrag": null,
+                                "kommentar": null
+                            }
+                        },
+                        "bausparvertraege": [
+                            {
+                                "angesparterBetrag": null,
+                                "bausparkasse": null,
+                                "vertragsnummer": null,
+                                "tarif": null,
+                                "vertragsbeginn": null,
+                                "jahresentgelt": null,
+                                "sparbeitragMonatlich": null,
+                                "bausparsumme": null,
+                                "zuteilungsdatum": null,
+                                "verwendung": {
+                                    "@type": null,
+                                    "maximalEinzusetzenderBetrag": null,
+                                    "kommentar": null
+                                }
+                            }
+                        ],
+                        "lebensOderRentenversicherungen": [
+                            {
+                                "rueckkaufswert": null,
+                                "praemieMonatlich": null,
+                                "verwendung": {
+                                    "@type": null,
+                                    "kommentar": null
+                                },
+                                "detailsWennZusatzsicherheit": {
+                                    "versicherungsgesellschaft": null,
+                                    "vertragsnummer": null,
+                                    "tarif": null,
+                                    "vertragsdatum": null,
+                                    "vertragsende": null,
+                                    "versicherungsart": null,
+                                    "versicherungssumme": null,
+                                    "verwaltungsgebuehrenJaehrlich": null
+                                }
+                            }
+                        ],
+                        "summeSonstigesVermoegen": {
+                            "aktuellerWert": null,
+                            "verwendung": {
+                                "@type": null,
+                                "maximalEinzusetzenderBetrag": null,
+                                "kommentar": null
+                            }
+                        }
+                    },
+                    "einnahmen": {
+                        "summeEinkuenfteAusKapitalvermoegen": null,
+                        "summeVariablerEinkuenfteMonatlich": null,
+                        "einkuenfteAusNebentaetigkeit": [
+                            {
+                                "betragMonatlich": null,
+                                "beginnDerTaetigkeit": null
+                            }
+                        ],
+                        "summeEhegattenunterhalt": null,
+                        "summeUnbefristeteZusatzrentenMonatlich": {
+                            "betrag": null,
+                            "kommentar": null
+                        },
+                        "summeSonstigeEinnahmenMonatlich": {
+                            "betrag": null,
+                            "kommentar": null
+                        }
+                    },
+                    "ausgaben": {
+                        "summeMietausgaben": {
+                            "betragMonatlich": null,
+                            "entfaelltMitFinanzierung": null
+                        },
+                        "summePrivaterKrankenversicherungenMonatlich": null,
+                        "unterhaltsverpflichtungenMonatlich": [
+                            null,
+                            null
+                        ],
+                        "summeSonstigerVersicherungsausgabenMonatlich": {
+                            "betrag": null,
+                            "kommentar": null
+                        },
+                        "summeSonstigerAusgabenMonatlich": {
+                            "betrag": null,
+                            "kommentar": null
+                        }
+                    },
+                    "verbindlichkeiten": {
+                        "ratenkredite": [
+                            {
+                                "rateMonatlich": null,
+                                "glaeubiger": null,
+                                "laufzeitende": null,
+                                "restschuld": null,
+                                "wirdAbgeloest": null,
+                                "kommentar": null
+                            }
+                        ],
+                        "privatdarlehen": [
+                            {
+                                "rateMonatlich": null,
+                                "glaeubiger": null,
+                                "laufzeitende": null,
+                                "restschuld": null,
+                                "wirdAbgeloest": null,
+                                "kommentar": null
+                            }
+                        ],
+                        "sonstigeVerbindlichkeit": {
+                            "rateMonatlich": null,
+                            "glaeubiger": null,
+                            "laufzeitende": null,
+                            "restschuld": null,
+                            "wirdAbgeloest": null,
+                            "kommentar": null
+                        }
+                    }
+                },
+                "zusatzangaben": {
+                    "kfzAnzahl": null,
+                    "zusatzangabenProProduktanbieter": [
+                        {
+                            "@type": null,
+                            "anzahlErwachseneImHaushalt": null,
+                            "anzahlKinderNichtImHaushalt": null
+                        },
+                        {
+                            "@type": null,
+                            "vermoegen": {
+                                "bankUndSparguthaben": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "wertpapiereAktien": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "bausparvertrag": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "sonstigesVermoegen": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "lebensversicherungKapitalgebunden": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "rentenversicherungKapitalgebunden": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "lebensversicherungFondsgebunden": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                },
+                                "rentenversicherungFondsgebunden": {
+                                    "guthaben": null,
+                                    "kontonummer": null
+                                }
+                            },
+                            "verbindlichkeiten": {
+                                "konsumentenkredit": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                },
+                                "dispokredit": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                },
+                                "kreditkarte": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                },
+                                "kkKredit": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                },
+                                "immobilienkredit": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                },
+                                "buergschaft": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                },
+                                "kfwHausbankenwechsel": {
+                                    "hoehe": null,
+                                    "kontonummer": null,
+                                    "anrechnungFuerBlankoanteil": null
+                                }
+                            },
+                            "bemerkungen": null
+                        },
+                        {
+                            "@type": null,
+                            "lebenshaltungskostenMonatlich": null
+                        }
+                    ]
+                }
+            }
+        ],
+        "finanzierungsobjekt": {
+            "immobilie": {
+                "adresse": {
+                    "strasse": null,
+                    "hausnummer": null,
+                    "plz": null,
+                    "ort": null
+                },
+                "typ": {
+                    "@type": null,
+                    "grundstuecksgroesse": null,
+                    "gebaeude": {
+                        "baujahr": null,
+                        "bauweise": null,
+                        "anzahlGeschosse": null,
+                        "zustand": null,
+                        "ausstattung": null,
+                        "nutzung": {
+                            "wohnen": {
+                                "gesamtflaeche": null,
+                                "nutzungsart": {
+                                    "@type": null,
+                                    "mieteinnahmenNettoKaltMonatlich": null,
+                                    "vermieteteFlaeche": null
+                                }
+                            },
+                            "gewerbe": {
+                                "gesamtflaeche": null,
+                                "nutzungsart": {
+                                    "@type": null,
+                                    "mieteinnahmenNettoKaltMonatlich": null
+                                }
+                            }
+                        },
+                        "modernisierung": {
+                            "jahr": null,
+                            "grad": null
+                        }
+                    },
+                    "einliegerwohnungVorhanden": null,
+                    "nutzflaechen": {
+                        "dachgeschoss": null,
+                        "unterkellerung": null
+                    },
+                    "fertighaus": null
+                },
+                "stellplaetze": [
+                    {
+                        "typ": null,
+                        "mieteMonatlich": null
+                    }
+                ],
+                "erbbaurecht": {
+                    "erbbauzinsJaehrlich": null,
+                    "grundstueckseigentuemer": null,
+                    "laufzeitBis": null
+                },
+                "grundbuchangabe": {
+                    "ort": null,
+                    "blatt": null,
+                    "amtsgericht": null,
+                    "flurstuecke": [
+                        {
+                            "flur": null,
+                            "flurstueck": null,
+                            "anteil": {
+                                "anteil": null,
+                                "gesamt": null
+                            },
+                            "groesse": null
+                        }
+                    ],
+                    "rechteInAbteilung2": {
+                        "betrag": null,
+                        "beschreibung": null
+                    },
+                    "anmerkungen": null
+                },
+                "zusatzangaben": {
+                    "beleihungswertangaben": {
+                        "marktueblicherKaufpreisProQm": null,
+                        "keinBaulandFlaeche": null,
+                        "bodenrichtwert": null,
+                        "wohnlage": null,
+                        "kubatur": null,
+                        "vergleichsmieteFuerWohnflaecheProQm": null,
+                        "vergleichsmieteFuerGewerbeflaecheProQm": null
+                    },
+                    "effektivzinsErhoehendeKosten": {
+                        "wohngebaeudeversicherungskostenJaehrlich": null,
+                        "grundbucheintragungskostenEinmalig": null,
+                        "sonstigeKosten": {
+                            "bezeichnung": null,
+                            "betragEinmalig": null
+                        }
+                    },
+                    "modernisierung": {
+                        "kernsanierung": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "dacherneuerung": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "fenster": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "rohrleitungen": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "heizung": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "waermedaemmung": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "baeder": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "innenausbau": {
+                            "jahr": null,
+                            "grad": null
+                        },
+                        "raumaufteilung": {
+                            "jahr": null,
+                            "grad": null
+                        }
+                    },
+                    "zusatzangabenProProduktanbieter": [
+                        {
+                            "@type": null,
+                            "beleihungsobjekt": {
+                                "@type": null,
+                                "gebaude": {
+                                    "ausstattung": null,
+                                    "kellerausbau": null,
+                                    "aufzugVorhanden": null,
+                                    "modernisierungsangaben": {
+                                        "bodenWandTreppe": null,
+                                        "heizungZentral": null,
+                                        "fenster": null,
+                                        "dach": null,
+                                        "badWc": null,
+                                        "stromAbwasserHeizkoerper": null,
+                                        "waermedaemmung": null,
+                                        "raumaufteilung": null
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": null,
+                            "vorlaeufigerVerkehrswert": null
+                        },
+                        {
+                            "@type": null,
+                            "anpassungenNachBelWertV": {
+                                "beleihungswertangaben": {
+                                    "allgemeineWertermittlung": {
+                                        "restnutzungsdauerInJahren": null,
+                                        "abzugZurWerteanpassung": {
+                                            "betrag": null,
+                                            "grund": null
+                                        },
+                                        "sicherheitsabschlag": null,
+                                        "eigennutzungsfaehigkeit": null,
+                                        "stellplatz": null,
+                                        "carport": null,
+                                        "garage": null,
+                                        "tiefgarage": null
+                                    },
+                                    "erbbaurecht": {
+                                        "liegenschaftszins": null,
+                                        "gebaeudeEntschaedigungBeiAblauf": null
+                                    }
+                                },
+                                "sachwertErmittlung": {
+                                    "aussenanlagen": null,
+                                    "baunebenkosten": null,
+                                    "regionalfaktor": null,
+                                    "sachwertfaktorNachhaltigkeitsfaktor": null
+                                },
+                                "ertragswertErmittlung": {
+                                    "wohnwirtschaftlich": {
+                                        "angaben": {
+                                            "liegenschaftszins": null,
+                                            "kapitalisierungszins": null,
+                                            "verwaltungskosten": null,
+                                            "instandhaltungskosten": null,
+                                            "mietausfallwagnis": null,
+                                            "nichtUmlagefaehigeBetriebskosten": null,
+                                            "modernisierungsrisiko": null
+                                        },
+                                        "bewirtschaftungskostenGarage": null,
+                                        "bewirtschaftungskostenStellplaetze": null
+                                    },
+                                    "gewerblich": {
+                                        "liegenschaftszins": null,
+                                        "kapitalisierungszins": null,
+                                        "verwaltungskosten": null,
+                                        "instandhaltungskosten": null,
+                                        "mietausfallwagnis": null,
+                                        "nichtUmlagefaehigeBetriebskosten": null,
+                                        "modernisierungsrisiko": null
+                                    }
+                                },
+                                "begruendungFuerAenderungen": null
+                            }
+                        },
+                        {
+                            "@type": null,
+                            "bewirtschaftungskostenJaehrlich": null
+                        }
+                    ]
+                }
+            },
+            "darlehensliste": [
+                {
+                    "referenzId": null,
+                    "darlehen": {
+                        "@type": null,
+                        "grundschuldart": null,
+                        "darlehensgeber": {
+                            "@type": null,
+                            "produktanbieter": null
+                        },
+                        "grundschuld": null,
+                        "darlehensbetrag": null,
+                        "rateMonatlich": null,
+                        "sollzins": null,
+                        "zinsbindungBis": null,
+                        "laufzeitende": null,
+                        "restschuld": {
+                            "aktuell": null,
+                            "zumAbloesetermin": null
+                        },
+                        "darlehenskontonummer": null
+                    }
+                }
+            ]
+        },
+        "finanzierungsbedarf": {
+            "finanzierungszweck": {
+                "@type": null,
+                "bereitsBeglicheneKosten": null,
+                "modernisierung": {
+                    "modernisierungskostenInklEigenleistungen": null,
+                    "renovierungskosten": null,
+                    "eigenleistung": null
+                },
+                "zuBeschaffendesKapital": {
+                    "betrag": null,
+                    "kommentar": null
+                },
+                "marktwertFinanzierungsobjekt": null,
+                "abloesungDarlehenDesFinanzierungsobjektes": [
+                    {
+                        "referenzIdAbzuloesendesDarlehen": null,
+                        "sondertilgungZumZinsbindungsende": null,
+                        "referenzIdFinanzierungsbaustein": null
+                    }
+                ]
+            },
+            "beratungshonorar": null,
+            "unbesicherteExterneDarlehen": [
+                {
+                    "typ": null,
+                    "darlehensgeber": null,
+                    "betrag": null,
+                    "rateMonatlich": null,
+                    "zinsbindungsende": null,
+                    "laufzeitende": null,
+                    "kommentar": null
+                }
+            ],
+            "praeferenzen": {
+                "finanzierungsdetailspraeferenzen": {
+                    "zinsbindung": {
+                        "@type": null,
+                        "vonJahre": null,
+                        "bisJahre": null,
+                        "kommentar": null
+                    },
+                    "laufzeit": {
+                        "@type": null,
+                        "kommentar": null
+                    },
+                    "ratenhoehe": {
+                        "@type": null,
+                        "kommentar": null
+                    },
+                    "tilgungssatzwechsel": {
+                        "@type": null,
+                        "kommentar": null
+                    },
+                    "sondertilgung": {
+                        "@type": null,
+                        "betrag": null,
+                        "kommentar": null
+                    },
+                    "bereitstellungszinsfreieZeit": {
+                        "@type": null,
+                        "monate": null,
+                        "kommentar": null
+                    }
+                },
+                "bestandteileDerFinanzierung": {
+                    "praeferenz": null,
+                    "kommentar": null
+                },
+                "absicherungUndVorsorge": {
+                    "praeferenz": null,
+                    "kommentar": null
+                },
+                "zeitlicherRahmen": {
+                    "@type": null,
+                    "kommentar": null
+                },
+                "girokonto": {
+                    "bestehendeGirokontenBeiBanken": [
+                        null,
+                        null
+                    ],
+                    "wechselbereitZumDarlehensgeber": null
+                },
+                "weiterePraeferenz": null
+            },
+            "finanzierungsbausteine": [
+                {
+                    "@type": null,
+                    "referenzId": null,
+                    "darlehensbetrag": null,
+                    "annuitaetendetails": {
+                        "zinsbindungInJahren": null,
+                        "tilgungswunsch": {
+                            "@type": null,
+                            "rate": null,
+                            "tilgungsbeginn": null
+                        },
+                        "sondertilgungJaehrlich": null,
+                        "auszahlungszeitpunkt": null
+                    },
+                    "bereitstellungszinsfreieZeitInMonaten": null,
+                    "kundenreferenzIdDerRiesterGefoerdertenPerson": null,
+                    "provision": null
+                }
+            ],
+            "ratenschutzbausteine": [
+                {
+                    "kundenreferenzIdDerVersichertenPerson": null,
+                    "versicherungsbeginn": null,
+                    "versicherungsdauerInJahren": null,
+                    "praemienzahlung": {
+                        "@type": null,
+                        "absicherungsfinanzierungsweise": null
+                    },
+                    "risikoabsicherungswuensche": [
+                        {
+                            "abzusicherndesRisiko": null,
+                            "versicherungssumme": null,
+                            "versicherteRate": null
+                        },
+                        {
+                            "abzusicherndesRisiko": null,
+                            "versicherungssumme": null,
+                            "versicherteRate": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "bankverbindung": {
+            "iban": null,
+            "bic": null,
+            "kundenreferenzIdsDerKontoinhaber": [
+                null,
+                null
+            ],
+            "nameKontoinhaberKeinKunde": null
+        }
+    }
+}

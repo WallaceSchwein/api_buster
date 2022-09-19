@@ -1,0 +1,108 @@
+{
+    "caseType": "baufi",
+    "subType": "newCustomer",
+    "partner": "Nein",
+    "combiType": "EFH",
+    "utilization": "misch",
+    "reason": "KaufNeu",
+    "applicants": [
+        {
+            "personalData":
+            {
+              "sex": "M",
+              "fname": "Javier Ángel Encinas",
+              "lname": "Bardem",
+              "zip": "80339",
+              "city": "München",
+              "birthdate": "1969-03-01",
+              "nationality": "ES",
+              "phoneDay": "089123456789"
+            },
+            "jobData":
+            {
+                "jobStatus": "Angest",
+                "employedSince": "2016-03-01"
+            }
+        }
+    ],
+    "estate":
+    {
+        "estateAddress":
+        {
+            "zip": "82166",
+            "city": "Gräfelfing"
+        }
+    },
+    "funding":
+    {
+        "baseData":
+        {
+            "priceBuilding": 2410
+        },
+        "mainLoans":
+        [
+            {
+                "seq": 1,
+                "amount": "280000",
+                "loanProduct": "Annuitaet",
+                "maturity": "15",
+                "amortisation": 0.0,
+                "requestedBurden": "",
+                "fullRepayment": "True",
+                "sotiPa": "0.01",
+                "freeAllocationMonths": "4",
+                "payoutRate": "95",
+                "extCommission": "1.3",
+                "contractNumber": "12",
+                "amortProduct": "dtKapLV",
+                "amortProvider": "amortProvider",
+                "contractWith": "add",
+                "contractDuration": 15,
+                "savingBurden": 500.99,
+                "closingFee": 566.78,
+                "requestedBurden": "",
+                "fullRepayment": "True",
+                "sotiPa": "0.01",
+                "freeAllocationMonths": "4",
+                "payoutRate": "95",
+                "extCommission": "1.3",
+                "contractNumber": "12",
+                "amortProduct": "dtKapLV",
+                "amortProvider": "amortProvider2",
+                "contractWith": "add",
+                "contractDuration": 16,
+                "savingBurden": 500.99,
+                "closingFee": 566.78,
+                "upcomingFees": 988.12,
+                "paymentDuration": 20,
+                "depositValue": 12333.44,
+                "amortSum": 450000.44
+            },
+            {
+                "seq": 3,
+                "amount": "15999.99",
+                "loanProduct": "Annuitaet",
+                "maturity": "15",
+                "amortisation": 0.0,
+                "requestedBurden": "",
+                "fullRepayment": "True",
+                "sotiPa": "0.01",
+                "freeAllocationMonths": "4",
+                "payoutRate": "95",
+                "extCommission": "1.3",
+                "contractNumber": "12",
+                "amortProduct": "dtKapLV",
+                "amortProvider": "amortProvider3",
+                "contractWith": "add",
+                "contractDuration": 17,
+                "savingBurden": 500.99,
+                "closingFee": 566.78,
+                "upcomingFees": 988.12,
+                "upcomingFeesPeriod": "pm",
+                "paymentDuration": 20,
+                "depositValue": 12333.44,
+                "amortSum": 450000.44
+            }
+        ]
+    }
+}

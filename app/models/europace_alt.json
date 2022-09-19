@@ -1,0 +1,1134 @@
+{
+  "importMetadaten": {
+    "betreuung": {
+      "kundenbetreuer": "ZRI26",
+      "bearbeiter": "ZRI26"
+    },
+    "datenkontext": "TEST_MODUS",
+    "externeVorgangsId": "ExterneReferenz 7c78de13-da02-4bdd-b4b2-c37855abfccc",
+    "importquelle": "Importquelle b1d2339c-7037-4e1a-aafb-18c661c7dbf7",
+    "leadtracking": {
+      "kampagne": "Kampagne 67bbb18c-3d80-4357-ace4-1e41dc341930",
+      "keyword": "Keyword 7305d752-12f7-423a-933d-d1bb0fd637d8",
+      "trackingId": "TrackingId be8d40b0-25af-48ae-8c57-a1b72527f903"
+    },
+    "zusaetzlicherEreignistext": "Ereignistext 2217da2b-05ac-4928-9b34-ab87185d56c2",
+    "prioritaet": "NEUTRAL"
+  },
+  "kundenangaben": {
+    "haushalte": [
+      {
+        "kunden": [
+          {
+            "externeKundenId": "extKunde1",
+            "referenzId": "jsonRef1",
+            "personendaten": {
+              "person": {
+                "titel": {
+                  "prof": false,
+                  "dr": false
+                },
+                "anrede": "HERR",
+                "vorname": "klaus",
+                "nachname": "klebermann"
+              },
+              "geburtsdatum": "1973-09-15",
+              "geburtsort": "Geborensdorf",
+              "staatsangehoerigkeit": "DE",
+              "familienstand": {
+                "@type": "VERHEIRATET",
+                "guetertrennungVereinbart": true
+              }
+            },
+            "wohnsituation": {
+              "wohnhaftSeit": "2010-08-23",
+              "anschrift": {
+                "strasse": "Waisenstraße",
+                "hausnummer": "24",
+                "plz": "10179",
+                "ort": "Berlin"
+              },
+              "voranschrift": {
+                "strasse": "Mustergasse",
+                "hausnummer": "23",
+                "plz": "12345",
+                "ort": "Musterort"
+              }
+            },
+            "finanzielles": {
+              "steuerId": "steuer1234567",
+              "beschaeftigung": {
+                "@type": "ANGESTELLTER",
+                "beruf": "Ingenieur",
+                "situationNachRenteneintritt": {
+                  "rentenbeginn": "2035-05-01",
+                  "gesetzlicheRenteMonatlich": 2200.1,
+                  "privateRenteMonatlich": 2.2,
+                  "sonstigesEinkommenMonatlich": 1.3
+                },
+                "beschaeftigungsverhaeltnis": {
+                  "arbeitgeber": {
+                    "name": "ABC GmbH",
+                    "inDeutschland": true,
+                    "inDeutschlandKommentar": "Kommentar c87a3d3b-7a32-414a-a04b-f6399ff58b6f"
+                  },
+                  "probezeit": false,
+                  "anzahlGehaelterProJahr": "ZWOELF",
+                  "beschaeftigtSeit": "2015-04-13"
+                },
+                "beschaeftigungsstatus": "UNBEFRISTET"
+              },
+              "einkommenNetto": 5000.4,
+              "riesterangaben": {
+                "bruttojahreseinkommenErwartet": 5.5,
+                "bruttovorjahreseinkommen": 6.6,
+                "sozialversicherungsnummer": "soz2134567"
+              }
+            },
+            "kontakt": {
+              "telefonnummer": {
+                "vorwahl": "030",
+                "nummer": "420860"
+              },
+              "email": "toni.tester@europace.de",
+              "weitereKontaktmoeglichkeiten": "weiterer Kontakt"
+            },
+            "zusatzangaben": {
+              "branche": "BAUGEWERBE",
+              "legitimationsdaten": {
+                "ausstellendeBehoerde": "behoerde123",
+                "ausstellungsdatum": "2010-04-05",
+                "ausweisart": {
+                  "@type": "PERSONALAUSWEIS"
+                },
+                "ausweisnummer": "ausweisnummer123"
+              },
+              "zusatzangabenProProduktanbieter": [
+                {
+                  "@type": "ZUSATZANGABEN_KUNDE_ING",
+                  "berufsgruppe": "ANGESTELLTER",
+                  "branche": "BAUGEWERBE",
+                  "geburtsland": "DE",
+                  "privateKrankenversicherungMonatlicheAusgaben": 250.7
+                },
+                {
+                  "@type": "ZUSATZANGABEN_KUNDE_MHB",
+                  "branche": "BAU"
+                },
+                {
+                  "@type": "ZUSATZANGABEN_KUNDE_DSL",
+                  "beschaeftigungImOeffentlichenDienst": false,
+                  "bruttoVorjahresEinkommen": 80000.0
+                }
+              ]
+            }
+          },
+          {
+            "externeKundenId": "extKunde2",
+            "referenzId": "jsonRef2",
+            "personendaten": {
+              "person": {
+                "titel": {
+                  "prof": false,
+                  "dr": true
+                },
+                "anrede": "FRAU",
+                "vorname": "Hildegard",
+                "nachname": "Testerine"
+              },
+              "geburtsdatum": "1977-10-19",
+              "geburtsort": "Geborenstadt",
+              "staatsangehoerigkeit": "CA",
+              "nichtEuBuerger": {
+                "inDeutschlandSeit": "2001-05-14",
+                "aufenthaltstitel": {
+                  "@type": "VISUM",
+                  "befristetBis": "2029-11-17",
+                  "arbeitserlaubnis": {
+                    "@type": "ARBEITSERLAUBNIS_VORHANDEN",
+                    "befristetBis": "2026-07-23"
+                  }
+                }
+              },
+              "familienstand": {
+                "@type": "LEDIG"
+              }
+            },
+            "wohnsituation": {
+              "wohnhaftSeit": "2011-09-24",
+              "anschrift": {
+                "strasse": "Neuestraße",
+                "hausnummer": "26",
+                "plz": "10180",
+                "ort": "Dahlem"
+              },
+              "voranschrift": {
+                "strasse": "Altestr.",
+                "hausnummer": "25",
+                "plz": "54321",
+                "ort": "Musterort alt"
+              }
+            },
+            "finanzielles": {
+              "steuerId": "steuer8901234",
+              "beschaeftigung": {
+                "@type": "ARBEITER",
+                "beruf": "Lehrerin",
+                "situationNachRenteneintritt": {
+                  "rentenbeginn": "2038-04-02",
+                  "gesetzlicheRenteMonatlich": 2300.7,
+                  "privateRenteMonatlich": 4.8,
+                  "sonstigesEinkommenMonatlich": 5.9
+                },
+                "beschaeftigungsverhaeltnis": {
+                  "arbeitgeber": {
+                    "name": "Privatschule Freudental",
+                    "inDeutschland": true,
+                    "inDeutschlandKommentar": "Kommentar ee9dadad-7905-4493-9cde-2c0fd21cff37"
+                  },
+                  "probezeit": true,
+                  "anzahlGehaelterProJahr": "DREIZEHN",
+                  "beschaeftigtSeit": "2020-06-12"
+                },
+                "beschaeftigungsstatus": "UNBEFRISTET"
+              },
+              "einkommenNetto": 6000.1,
+              "riesterangaben": {
+                "bruttojahreseinkommenErwartet": 1.2,
+                "bruttovorjahreseinkommen": 2.3,
+                "sozialversicherungsnummer": "soz3456789"
+              }
+            },
+            "kontakt": {
+              "telefonnummer": {
+                "vorwahl": "030",
+                "nummer": "5551234"
+              },
+              "email": "hildegard.testerine@europace.de",
+              "weitereKontaktmoeglichkeiten": "weiterer Kontakt Hildegard"
+            },
+            "zusatzangaben": {
+              "branche": "SONSTIGE",
+              "legitimationsdaten": {
+                "ausweisart": {
+                  "@type": "ANDERE_AUSWEISART",
+                  "typ": "Geburtsurkunde"
+                },
+                "ausstellungsdatum": "2010-04-05",
+                "ausstellendeBehoerde": "behoerde123",
+                "ausweisnummer": "ausweisnummer123"
+              },
+              "zusatzangabenProProduktanbieter": [
+                {
+                  "@type": "ZUSATZANGABEN_KUNDE_ING",
+                  "berufsgruppe": "ANGESTELLTER",
+                  "branche": "ERZIEHUNG_UNTERRICHT",
+                  "privateKrankenversicherungMonatlicheAusgaben": 250.0,
+                  "geburtsland": "CA",
+                  "weitereStaatsangehoerigkeiten": [
+                    "RU",
+                    "FR"
+                  ]
+                },
+                {
+                  "@type": "ZUSATZANGABEN_KUNDE_MHB",
+                  "branche": "SONSTIGES"
+                },
+                {
+                  "@type": "ZUSATZANGABEN_KUNDE_DSL",
+                  "bruttoVorjahresEinkommen": 80000.0,
+                  "beschaeftigungImOeffentlichenDienst": false
+                }
+              ]
+            }
+          }
+        ],
+        "kinder": [
+          {
+            "name": "Frida",
+            "geburtsdatum": "2007-08-05",
+            "kindergeldWirdBezogen": true,
+            "unterhalt": 200.4,
+            "kundenreferenzIdRiesterzuordnung": "jsonRef1"
+          },
+          {
+            "name": "Justus",
+            "geburtsdatum": "2004-06-06",
+            "kindergeldWirdBezogen": false,
+            "unterhalt": 300.5,
+            "kundenreferenzIdRiesterzuordnung": "jsonRef2"
+          }
+        ],
+        "finanzielleSituation": {
+          "bestehendeImmobilien": [
+            {
+              "bezeichnung": "Die Immobilie",
+              "marktwert": 340000.6,
+              "immobilie": {
+                "adresse": {
+                  "strasse": "Altestraße",
+                  "hausnummer": "21",
+                  "plz": "12346",
+                  "ort": "Steglitz"
+                },
+                "typ": {
+                  "@type": "EIGENTUMSWOHNUNG",
+                  "grundstuecksgroesse": 620.5,
+                  "gebaeude": {
+                    "baujahr": 2012,
+                    "bauweise": "FACHWERK_MIT_ZIEGELN",
+                    "anzahlGeschosse": 2,
+                    "zustand": "GUT",
+                    "ausstattung": "EINFACH",
+                    "nutzung": {
+                      "wohnen": {
+                        "gesamtflaeche": 120.2,
+                        "nutzungsart": {
+                          "@type": "VERMIETET",
+                          "mieteinnahmenNettoKaltMonatlich": 600.4
+                        }
+                      },
+                      "gewerbe": {
+                        "gesamtflaeche": 100.8,
+                        "nutzungsart": {
+                          "@type": "EIGENGENUTZT"
+                        }
+                      }
+                    },
+                    "modernisierung": {
+                      "jahr": 2014,
+                      "grad": "GERING"
+                    }
+                  },
+                  "miteigentumsanteil": {
+                    "anteil": 55.6,
+                    "gesamt": 60
+                  },
+                  "anzahlDerWohneinheitenImObjekt": 43,
+                  "anzahlDerGewerbeeinheitenImObjekt": 2,
+                  "bezeichnungWohneinheit": "Links"
+                },
+                "stellplaetze": [
+                  {
+                    "typ": "GARAGE",
+                    "mieteMonatlich": 80.7
+                  }
+                ],
+                "erbbaurecht": {
+                  "erbbauzinsJaehrlich": 2000.4,
+                  "grundstueckseigentuemer": "OEFFENTLICH_KIRCHLICH",
+                  "laufzeitBis": 2038
+                },
+                "grundbuchangabe": {
+                  "ort": "Grundbuch Ort",
+                  "blatt": "75",
+                  "amtsgericht": "Amtsgericht",
+                  "flurstuecke": [
+                    {
+                      "flur": "1. OG",
+                      "flurstueck": "72",
+                      "anteil": {
+                        "anteil": 12.3,
+                        "gesamt": 13
+                      },
+                      "groesse": 80.4
+                    }
+                  ],
+                  "rechteInAbteilung2": {
+                    "betrag": 100000.5,
+                    "beschreibung": "Rechte Abteilung 2 Beschreibung"
+                  },
+                  "anmerkungen": "Anmerkung Grundbuch"
+                },
+                "zusatzangaben": {
+                  "beleihungswertangaben": {
+                    "marktueblicherKaufpreisProQm": 100000.0,
+                    "keinBaulandFlaeche": 20.0,
+                    "bodenrichtwert": 20000.0,
+                    "wohnlage": "MITTEL",
+                    "kubatur": 30.0,
+                    "vergleichsmieteFuerWohnflaecheProQm": 13.0,
+                    "vergleichsmieteFuerGewerbeflaecheProQm": 9.0
+                  },
+                  "effektivzinsErhoehendeKosten": {
+                    "wohngebaeudeversicherungskostenJaehrlich": 300.0,
+                    "grundbucheintragungskostenEinmalig": 1000.0,
+                    "sonstigeKosten": {
+                      "bezeichnung": "SonstigeEffektivzinsErhoehendeKosten123",
+                      "betragEinmalig": 3000.0
+                    }
+                  },
+                  "modernisierung": {
+                    "kernsanierung": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "dacherneuerung": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "fenster": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "rohrleitungen": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "heizung": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "waermedaemmung": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "baeder": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "innenausbau": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    },
+                    "raumaufteilung": {
+                      "jahr": 2020,
+                      "grad": "UMFASSEND"
+                    }
+                  },
+                  "zusatzangabenProProduktanbieter": [
+                    {
+                      "@type": "ZUSATZANGABEN_IMMOBILIE_ING",
+                      "beleihungsobjekt": {
+                        "@type": "ING_EIGENTUMSWOHNUNG",
+                        "geschosslage": "ZWEITES_OBERGESCHOSS",
+                        "gebaude": {
+                          "ausstattung": "GEHOBEN",
+                          "kellerausbau": "AUSGEBAUT",
+                          "aufzugVorhanden": true,
+                          "modernisierungsangaben": {
+                            "bodenWandTreppe": true,
+                            "heizungZentral": true,
+                            "fenster": true,
+                            "dach": true,
+                            "badWc": true,
+                            "stromAbwasserHeizkoerper": true,
+                            "waermedaemmung": true,
+                            "raumaufteilung": true
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ZUSATZANGABEN_IMMOBILIE_SANTANDER",
+                      "vorlaeufigerVerkehrswert": 500000.0
+                    },
+                    {
+                      "@type": "ZUSATZANGABEN_IMMOBILIE_GENOPACE",
+                      "anpassungenNachBelWertV": {
+                        "beleihungswertangaben": {
+                          "allgemeineWertermittlung": {
+                            "restnutzungsdauerInJahren": 3,
+                            "abzugZurWerteanpassung": {
+                              "betrag": 100.0,
+                              "grund": "Grund123"
+                            },
+                            "sicherheitsabschlag": 2.0,
+                            "eigennutzungsfaehigkeit": true,
+                            "stellplatz": 20.0,
+                            "carport": 50.0,
+                            "garage": 30.0,
+                            "tiefgarage": 60.0
+                          },
+                          "erbbaurecht": {
+                            "liegenschaftszins": 2.0,
+                            "gebaeudeEntschaedigungBeiAblauf": 2.5
+                          }
+                        },
+                        "sachwertErmittlung": {
+                          "aussenanlagen": 2.0,
+                          "baunebenkosten": 3.0,
+                          "regionalfaktor": 4.0,
+                          "sachwertfaktorNachhaltigkeitsfaktor": 5.0
+                        },
+                        "ertragswertErmittlung": {
+                          "wohnwirtschaftlich": {
+                            "angaben": {
+                              "liegenschaftszins": 10.0,
+                              "kapitalisierungszins": 11.0,
+                              "verwaltungskosten": 12.0,
+                              "instandhaltungskosten": 13.0,
+                              "mietausfallwagnis": 14.0,
+                              "nichtUmlagefaehigeBetriebskosten": 15.0,
+                              "modernisierungsrisiko": 16.0
+                            },
+                            "bewirtschaftungskostenGarage": 10.0,
+                            "bewirtschaftungskostenStellplaetze": 12.0
+                          },
+                          "gewerblich": {
+                            "liegenschaftszins": 10.0,
+                            "kapitalisierungszins": 11.0,
+                            "verwaltungskosten": 12.0,
+                            "instandhaltungskosten": 13.0,
+                            "mietausfallwagnis": 14.0,
+                            "nichtUmlagefaehigeBetriebskosten": 15.0,
+                            "modernisierungsrisiko": 16.0
+                          }
+                        },
+                        "begruendungFuerAenderungen": "grund123"
+                      }
+                    },
+                    {
+                      "@type": "ZUSATZANGABEN_IMMOBILIE_DSL",
+                      "bewirtschaftungskostenJaehrlich": 200.0
+                    }
+                  ]
+                }
+              },
+              "darlehensliste": [
+                {
+                  "@type": "BESTEHENDES_BAUSPARDARLEHEN",
+                  "grundschuldart": "BRIEF_GRUNDSCHULD",
+                  "darlehensgeber": {
+                    "@type": "PRODUKTANBIETER_DARLEHENSGEBER",
+                    "produktanbieter": "AACHENER_BANK"
+                  },
+                  "grundschuld": 500000.7,
+                  "darlehensbetrag": 200000.6,
+                  "rateMonatlich": 850.8,
+                  "sollzins": 5.2,
+                  "zinsbindungBis": "2030-12-13",
+                  "laufzeitende": "2034-01-23",
+                  "restschuld": {
+                    "aktuell": 150000.9,
+                    "zumAbloesetermin": 10000.1
+                  },
+                  "darlehenskontonummer": "DE123456789012345"
+                }
+              ],
+              "kommentar": "Kommentar 976442a7-8f5b-4858-9c8c-976ee23cfdeb",
+              "einsatz": "VERKAUFEN",
+              "maximalEinzusetzenderBetragBeiVerkauf": 123000.3
+            }
+          ],
+          "vermoegen": {
+            "summeBankUndSparguthaben": {
+              "guthaben": 54000.2,
+              "zinsertragJaehrlich": 12.3,
+              "verwendung": {
+                "@type": "AUFLOESUNG_ALS_VERWENDUNG",
+                "maximalEinzusetzenderBetrag": 234.1,
+                "kommentar": "Kommentar 4af1102f-7f6e-4a55-bf9a-ec49b67d7688"
+              }
+            },
+            "summeSparplaene": {
+              "aktuellerWert": 22.9,
+              "betragMonatlich": 77.1,
+              "verwendung": {
+                "@type": "KEINE_VERWENDUNG",
+                "kommentar": "Kommentar a82d04af-6121-402a-a9f9-c900f09f8c86"
+              }
+            },
+            "summeDepotvermoegen": {
+              "depotwert": 130345.5,
+              "verwendung": {
+                "@type": "AUFLOESUNG_ALS_VERWENDUNG",
+                "maximalEinzusetzenderBetrag": 789.4,
+                "kommentar": "Kommentar cc78d5b0-3bb8-4e00-b1a8-10fb13f57653"
+              }
+            },
+            "bausparvertraege": [
+              {
+                "angesparterBetrag": 60000.1,
+                "bausparkasse": "BADENIA",
+                "vertragsnummer": "123123",
+                "tarif": "BHW_TARIF_FI1N",
+                "vertragsbeginn": "2005-04-03",
+                "jahresentgelt": 90000.4,
+                "sparbeitragMonatlich": 55.3,
+                "bausparsumme": 100000.2,
+                "zuteilungsdatum": "2023-07-22",
+                "verwendung": {
+                  "@type": "AUFLOESUNG_ALS_VERWENDUNG",
+                  "maximalEinzusetzenderBetrag": 120.5,
+                  "kommentar": "Kommentar b3466f46-cac6-4be6-8443-4e7c06ac8780"
+                }
+              }
+            ],
+            "lebensOderRentenversicherungen": [
+              {
+                "rueckkaufswert": 45000.9,
+                "praemieMonatlich": 234.8,
+                "verwendung": {
+                  "@type": "ABTRETEN_ALS_VERWENDUNG",
+                  "kommentar": "Kommentar 5b2c8b58-af1a-4fa4-a864-e15d013ddd10"
+                },
+                "detailsWennZusatzsicherheit": {
+                  "versicherungsgesellschaft": "Sicher AG",
+                  "vertragsnummer": "222333444555",
+                  "tarif": "A38",
+                  "vertragsdatum": "2010-07-17",
+                  "vertragsende": "2011-04-16",
+                  "versicherungsart": "FONDSGEBUNDENE_LEBENSVERSICHERUNG",
+                  "versicherungssumme": 32000.6,
+                  "verwaltungsgebuehrenJaehrlich": 62.7
+                }
+              }
+            ],
+            "summeSonstigesVermoegen": {
+              "aktuellerWert": 765.6,
+              "verwendung": {
+                "@type": "AUFLOESUNG_ALS_VERWENDUNG",
+                "maximalEinzusetzenderBetrag": 853.7,
+                "kommentar": "Kommentar deeab355-0fb0-455c-8dd4-4ec7c9680f5d"
+              }
+            }
+          },
+          "einnahmen": {
+            "summeEinkuenfteAusKapitalvermoegen": 345.9,
+            "summeVariablerEinkuenfteMonatlich": 103.3,
+            "einkuenfteAusNebentaetigkeit": [
+              {
+                "betragMonatlich": 234.7,
+                "beginnDerTaetigkeit": "2012-05-14"
+              }
+            ],
+            "summeEhegattenunterhalt": 234.8,
+            "summeUnbefristeteZusatzrentenMonatlich": {
+              "betrag": 102.2,
+              "kommentar": "Kommentar 860c1039-8d10-4ae4-8d20-f45069df5bef"
+            },
+            "summeSonstigeEinnahmenMonatlich": {
+              "betrag": 101.1,
+              "kommentar": "Kommentar 3a3b7ec8-6578-4e8f-84db-1eeef3a03dd2"
+            }
+          },
+          "ausgaben": {
+            "summeMietausgaben": {
+              "betragMonatlich": 800.6,
+              "entfaelltMitFinanzierung": true
+            },
+            "summePrivaterKrankenversicherungenMonatlich": 500.7,
+            "unterhaltsverpflichtungenMonatlich": [
+              250.1,
+              300.2
+            ],
+            "summeSonstigerVersicherungsausgabenMonatlich": {
+              "betrag": 450.9,
+              "kommentar": "Kommentar 8a7d9834-334f-4fc3-b1be-271f279a874b"
+            },
+            "summeSonstigerAusgabenMonatlich": {
+              "betrag": 400.8,
+              "kommentar": "Kommentar e11de502-09f6-4429-acb3-a7cb9ce5e952"
+            }
+          },
+          "verbindlichkeiten": {
+            "ratenkredite": [
+              {
+                "rateMonatlich": 432.5,
+                "glaeubiger": "Gläubiger a18f8195-0b61-4638-a091-582c50429dfd",
+                "laufzeitende": "2025-10-24",
+                "restschuld": 123000.4,
+                "wirdAbgeloest": true,
+                "kommentar": "Kommentar b605fd84-3767-4b4b-a526-ecf850ea81aa"
+              }
+            ],
+            "privatdarlehen": [
+              {
+                "rateMonatlich": 567.7,
+                "glaeubiger": "Gläubiger d621d9e6-1c57-421b-85f4-7063e848ce6e",
+                "laufzeitende": "2026-05-12",
+                "restschuld": 123400.6,
+                "wirdAbgeloest": true,
+                "kommentar": "Kommentar e9bdbb61-2938-4e7e-b9ad-e147e6dfc130"
+              }
+            ],
+            "sonstigeVerbindlichkeit": {
+              "rateMonatlich": 890.9,
+              "glaeubiger": "Gläubiger 0fc88c81-389f-4b44-b559-3e9198ab30ed",
+              "laufzeitende": "2027-04-13",
+              "restschuld": 123450.8,
+              "wirdAbgeloest": true,
+              "kommentar": "Kommentar 955bd205-6eaf-4737-9d79-f8750c925824"
+            }
+          }
+        },
+        "zusatzangaben": {
+          "kfzAnzahl": 2,
+          "zusatzangabenProProduktanbieter": [
+            {
+              "@type": "ZUSATZANGABEN_HAUSHALT_ING",
+              "anzahlErwachseneImHaushalt": 2,
+              "anzahlKinderNichtImHaushalt": 1
+            },
+            {
+              "@type": "ZUSATZANGABEN_HAUSHALT_SANTANDER",
+              "vermoegen": {
+                "bankUndSparguthaben": {
+                  "guthaben": 123.0,
+                  "kontonummer": "konto1"
+                },
+                "wertpapiereAktien": {
+                  "guthaben": 234.0,
+                  "kontonummer": "konto2"
+                },
+                "bausparvertrag": {
+                  "guthaben": 345.0,
+                  "kontonummer": "konto3"
+                },
+                "sonstigesVermoegen": {
+                  "guthaben": 456.0,
+                  "kontonummer": "konto4"
+                },
+                "lebensversicherungKapitalgebunden": {
+                  "guthaben": 567.0,
+                  "kontonummer": "konto5"
+                },
+                "rentenversicherungKapitalgebunden": {
+                  "guthaben": 678.0,
+                  "kontonummer": "konto6"
+                },
+                "lebensversicherungFondsgebunden": {
+                  "guthaben": 789.0,
+                  "kontonummer": "konto7"
+                },
+                "rentenversicherungFondsgebunden": {
+                  "guthaben": 888.0,
+                  "kontonummer": "konto8"
+                }
+              },
+              "verbindlichkeiten": {
+                "konsumentenkredit": {
+                  "hoehe": 987.0,
+                  "kontonummer": "konto11",
+                  "anrechnungFuerBlankoanteil": 12.0
+                },
+                "dispokredit": {
+                  "hoehe": 876.0,
+                  "kontonummer": "konto22",
+                  "anrechnungFuerBlankoanteil": 13.0
+                },
+                "kreditkarte": {
+                  "hoehe": 765.0,
+                  "kontonummer": "konto33",
+                  "anrechnungFuerBlankoanteil": 14.0
+                },
+                "kkKredit": {
+                  "hoehe": 654.0,
+                  "kontonummer": "konto44",
+                  "anrechnungFuerBlankoanteil": 15.0
+                },
+                "immobilienkredit": {
+                  "hoehe": 543.0,
+                  "kontonummer": "konto55",
+                  "anrechnungFuerBlankoanteil": 16.0
+                },
+                "buergschaft": {
+                  "hoehe": 432.0,
+                  "kontonummer": "konto66",
+                  "anrechnungFuerBlankoanteil": 17.0
+                },
+                "kfwHausbankenwechsel": {
+                  "hoehe": 321.0,
+                  "kontonummer": "konto77",
+                  "anrechnungFuerBlankoanteil": 18.0
+                }
+              },
+              "bemerkungen": "Kommentar 123ec874-bf91-41f6-8d3e-8a080a18dabc"
+            },
+            {
+              "@type": "ZUSATZANGABEN_HAUSHALT_DSL",
+              "lebenshaltungskostenMonatlich": 1650.0
+            }
+          ]
+        }
+      }
+    ],
+    "finanzierungsobjekt": {
+      "immobilie": {
+        "adresse": {
+          "strasse": "Immobilienstraße",
+          "hausnummer": "16",
+          "plz": "82784",
+          "ort": "Spandau"
+        },
+        "typ": {
+          "@type": "EINFAMILIENHAUS",
+          "grundstuecksgroesse": 620.4,
+          "gebaeude": {
+            "baujahr": 2018,
+            "bauweise": "GLAS_STAHL",
+            "anzahlGeschosse": 1,
+            "zustand": "MAESSIG",
+            "ausstattung": "MITTEL",
+            "nutzung": {
+              "wohnen": {
+                "gesamtflaeche": 121.1,
+                "nutzungsart": {
+                  "@type": "TEILVERMIETET",
+                  "mieteinnahmenNettoKaltMonatlich": 601.3,
+                  "vermieteteFlaeche": 93.2
+                }
+              },
+              "gewerbe": {
+                "gesamtflaeche": 101.7,
+                "nutzungsart": {
+                  "@type": "VERMIETET",
+                  "mieteinnahmenNettoKaltMonatlich": 701.9
+                }
+              }
+            },
+            "modernisierung": {
+              "jahr": 2015,
+              "grad": "HOCH"
+            }
+          },
+          "einliegerwohnungVorhanden": true,
+          "nutzflaechen": {
+            "dachgeschoss": "FLACHDACH",
+            "unterkellerung": "TEILWEISE_UNTERKELLERT"
+          },
+          "fertighaus": true
+        },
+        "stellplaetze": [
+          {
+            "typ": "CARPORT",
+            "mieteMonatlich": 81.6
+          }
+        ],
+        "erbbaurecht": {
+          "erbbauzinsJaehrlich": 3000.2,
+          "grundstueckseigentuemer": "OEFFENTLICH_KIRCHLICH",
+          "laufzeitBis": 2037
+        },
+        "grundbuchangabe": {
+          "ort": "Grundbuch Ort 2",
+          "blatt": "72",
+          "amtsgericht": "Amtsgericht",
+          "flurstuecke": [
+            {
+              "flur": "2. OG",
+              "flurstueck": "71",
+              "anteil": {
+                "anteil": 13.2,
+                "gesamt": 14
+              },
+              "groesse": 81.3
+            }
+          ],
+          "rechteInAbteilung2": {
+            "betrag": 110000.4,
+            "beschreibung": "Rechte Abteilung 2 Beschreibung 2"
+          },
+          "anmerkungen": "Anmerkung ff0a01a3-3c54-42b3-832e-9ba92f4ee844"
+        },
+        "zusatzangaben": {
+          "beleihungswertangaben": {
+            "marktueblicherKaufpreisProQm": 100000.0,
+            "keinBaulandFlaeche": 20.0,
+            "bodenrichtwert": 20000.0,
+            "wohnlage": "MITTEL",
+            "kubatur": 30.0,
+            "vergleichsmieteFuerWohnflaecheProQm": 13.0,
+            "vergleichsmieteFuerGewerbeflaecheProQm": 9.0
+          },
+          "effektivzinsErhoehendeKosten": {
+            "wohngebaeudeversicherungskostenJaehrlich": 300.0,
+            "grundbucheintragungskostenEinmalig": 1000.0,
+            "sonstigeKosten": {
+              "bezeichnung": "SonstigeEffektivzinsErhoehendeKosten123",
+              "betragEinmalig": 3000.0
+            }
+          },
+          "modernisierung": {
+            "kernsanierung": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "dacherneuerung": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "fenster": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "rohrleitungen": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "heizung": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "waermedaemmung": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "baeder": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "innenausbau": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            },
+            "raumaufteilung": {
+              "jahr": 2020,
+              "grad": "UMFASSEND"
+            }
+          },
+          "zusatzangabenProProduktanbieter": [
+            {
+              "@type": "ZUSATZANGABEN_IMMOBILIE_ING",
+              "beleihungsobjekt": {
+                "@type": "ING_HAUS",
+                "gebaude": {
+                  "ausstattung": "GEHOBEN",
+                  "kellerausbau": "AUSGEBAUT",
+                  "aufzugVorhanden": true,
+                  "modernisierungsangaben": {
+                    "bodenWandTreppe": true,
+                    "heizungZentral": true,
+                    "fenster": true,
+                    "dach": true,
+                    "badWc": true,
+                    "stromAbwasserHeizkoerper": true,
+                    "waermedaemmung": true,
+                    "raumaufteilung": true
+                  }
+                }
+              }
+            },
+            {
+              "@type": "ZUSATZANGABEN_IMMOBILIE_SANTANDER",
+              "vorlaeufigerVerkehrswert": 500000.0
+            },
+            {
+              "@type": "ZUSATZANGABEN_IMMOBILIE_GENOPACE",
+              "anpassungenNachBelWertV": {
+                "beleihungswertangaben": {
+                  "allgemeineWertermittlung": {
+                    "restnutzungsdauerInJahren": 3,
+                    "abzugZurWerteanpassung": {
+                      "betrag": 100.0,
+                      "grund": "Grund123"
+                    },
+                    "sicherheitsabschlag": 2.0,
+                    "eigennutzungsfaehigkeit": true,
+                    "stellplatz": 20.0,
+                    "carport": 50.0,
+                    "garage": 30.0,
+                    "tiefgarage": 60.0
+                  },
+                  "erbbaurecht": {
+                    "liegenschaftszins": 2.0,
+                    "gebaeudeEntschaedigungBeiAblauf": 2.5
+                  }
+                },
+                "sachwertErmittlung": {
+                  "aussenanlagen": 2.0,
+                  "baunebenkosten": 3.0,
+                  "regionalfaktor": 4.0,
+                  "sachwertfaktorNachhaltigkeitsfaktor": 5.0
+                },
+                "ertragswertErmittlung": {
+                  "wohnwirtschaftlich": {
+                    "angaben": {
+                      "liegenschaftszins": 10.0,
+                      "kapitalisierungszins": 11.0,
+                      "verwaltungskosten": 12.0,
+                      "instandhaltungskosten": 13.0,
+                      "mietausfallwagnis": 14.0,
+                      "nichtUmlagefaehigeBetriebskosten": 15.0,
+                      "modernisierungsrisiko": 16.0
+                    },
+                    "bewirtschaftungskostenGarage": 10.0,
+                    "bewirtschaftungskostenStellplaetze": 12.0
+                  },
+                  "gewerblich": {
+                    "liegenschaftszins": 10.0,
+                    "kapitalisierungszins": 11.0,
+                    "verwaltungskosten": 12.0,
+                    "instandhaltungskosten": 13.0,
+                    "mietausfallwagnis": 14.0,
+                    "nichtUmlagefaehigeBetriebskosten": 15.0,
+                    "modernisierungsrisiko": 16.0
+                  }
+                },
+                "begruendungFuerAenderungen": "grund123"
+              }
+            },
+            {
+              "@type": "ZUSATZANGABEN_IMMOBILIE_DSL",
+              "bewirtschaftungskostenJaehrlich": 200.0
+            }
+          ]
+        }
+      },
+      "darlehensliste": [
+        {
+          "referenzId": "Referenz Abakus",
+          "darlehen": {
+            "@type": "BESTEHENDES_BAUSPARDARLEHEN",
+            "grundschuldart": "BUCH_GRUNDSCHULD",
+            "darlehensgeber": {
+              "@type": "PRODUKTANBIETER_DARLEHENSGEBER",
+              "produktanbieter": "ABAKUS_BANK"
+            },
+            "grundschuld": 501000.6,
+            "darlehensbetrag": 201000.5,
+            "rateMonatlich": 851.8,
+            "sollzins": 4.1,
+            "zinsbindungBis": "2031-01-17",
+            "laufzeitende": "2036-02-22",
+            "restschuld": {
+              "aktuell": 151000.7,
+              "zumAbloesetermin": 10100.9
+            },
+            "darlehenskontonummer": "DE78912345678"
+          }
+        }
+      ]
+    },
+    "finanzierungsbedarf": {
+      "finanzierungszweck": {
+        "@type": "ANSCHLUSSFINANZIERUNG",
+        "bereitsBeglicheneKosten": 5023.5,
+        "modernisierung": {
+          "modernisierungskostenInklEigenleistungen": 40000.0,
+          "renovierungskosten": 10000.0,
+          "eigenleistung": 3000.0
+        },
+        "zuBeschaffendesKapital": {
+          "betrag": 10345.2,
+          "kommentar": "Kommentierter cf56209f-13c8-436a-84fb-33c587ce58ee"
+        },
+        "marktwertFinanzierungsobjekt": 350000.0,
+        "abloesungDarlehenDesFinanzierungsobjektes": [
+          {
+            "referenzIdAbzuloesendesDarlehen": "Referenz Abakus",
+            "sondertilgungZumZinsbindungsende": 121000.4,
+            "referenzIdFinanzierungsbaustein": "Referenz Annu"
+          }
+        ]
+      },
+      "beratungshonorar": 1001.2,
+      "unbesicherteExterneDarlehen": [
+        {
+          "typ": "ARBEITGEBERDARLEHEN",
+          "darlehensgeber": "Der Darlehensgeber",
+          "betrag": 10300.6,
+          "rateMonatlich": 1234.5,
+          "zinsbindungsende": "2031-06-12",
+          "laufzeitende": "2030-05-18",
+          "kommentar": "Kommentar ddc999bb-dbe2-4087-8c65-928360fa6849"
+        }
+      ],
+      "praeferenzen": {
+        "finanzierungsdetailspraeferenzen": {
+          "zinsbindung": {
+            "@type": "ZINSBINDUNGSSPANNE",
+            "vonJahre": 10,
+            "bisJahre": 15,
+            "kommentar": "Kommentar f4823c55-6bb8-4a4b-af91-8e3cc16172ea"
+          },
+          "laufzeit": {
+            "@type": "MOEGLICHST_SCHNELL",
+            "kommentar": "Kommentar 9fb18630-9ccf-4c67-91a3-17e04e8689c6"
+          },
+          "ratenhoehe": {
+            "@type": "WARMMIETE_VON_HEUTE",
+            "kommentar": "Kommentar 05934da4-ceca-4382-97c5-30054244b6e4"
+          },
+          "tilgungssatzwechsel": {
+            "@type": "NICHT_EINGEPLANT_ODER_ABSEHBAR",
+            "kommentar": "Kommentar 1872a8b7-dd36-4cb1-b8ae-7e72878b7ff3"
+          },
+          "sondertilgung": {
+            "@type": "EURO_JAEHRLICH",
+            "betrag": 23456.8,
+            "kommentar": "Kommentar 4124206c-822c-4acc-8783-a1427bab8163"
+          },
+          "bereitstellungszinsfreieZeit": {
+            "@type": "IN_MONATEN",
+            "monate": 6,
+            "kommentar": "Kommentar 310cab02-a728-4dd3-a8f4-c8eb428d7b92"
+          }
+        },
+        "bestandteileDerFinanzierung": {
+          "praeferenz": "KONKRETE_VORSTELLUNGEN",
+          "kommentar": "Kommentar 1a42fee5-1d60-42fc-b625-022bafed431c"
+        },
+        "absicherungUndVorsorge": {
+          "praeferenz": "KEINE_PRAEFERENZ",
+          "kommentar": "Kommentar abff9f91-9074-4930-9165-4567879a11a7"
+        },
+        "zeitlicherRahmen": {
+          "@type": "SO_SCHNELL_WIE_MOEGLICH",
+          "kommentar": "Kommentar c8f9552c-0fa0-4f14-9706-d53a7c7c06bf"
+        },
+        "girokonto": {
+          "bestehendeGirokontenBeiBanken": [
+            "Bank e50d6e40-82ef-4ef4-81dc-068c45bf43d8",
+            "Bank 093e4850-1d63-4d4a-9a8a-46181dde3679"
+          ],
+          "wechselbereitZumDarlehensgeber": true
+        },
+        "weiterePraeferenz": "Weitere Präferenz f32a9157-c3dc-4c09-b873-cadfd999c2f3"
+      },
+      "finanzierungsbausteine": [
+        {
+          "@type": "ANNUITAETENDARLEHEN",
+          "referenzId": "Referenz Annu",
+          "darlehensbetrag": 234567.8,
+          "annuitaetendetails": {
+            "zinsbindungInJahren": 10,
+            "tilgungswunsch": {
+              "@type": "RATE",
+              "rate": 1567.9,
+              "tilgungsbeginn": "2020-09-20"
+            },
+            "sondertilgungJaehrlich": 5.8,
+            "auszahlungszeitpunkt": "2021-07-19"
+          },
+          "bereitstellungszinsfreieZeitInMonaten": 6,
+          "kundenreferenzIdDerRiesterGefoerdertenPerson": "jsonRef1",
+          "provision": 4.1
+        }
+      ],
+      "ratenschutzbausteine": [
+        {
+          "kundenreferenzIdDerVersichertenPerson": "jsonRef2",
+          "versicherungsbeginn": "2020-09-13",
+          "versicherungsdauerInJahren": 7,
+          "praemienzahlung": {
+            "@type": "EINMALIGE_PRAEMIENZAHLUNG",
+            "absicherungsfinanzierungsweise": "DURCH_HAUPTDARLEHEN"
+          },
+          "risikoabsicherungswuensche": [
+            {
+              "abzusicherndesRisiko": "ARBEITSLOSIGKEIT",
+              "versicherungssumme": 34567.1,
+              "versicherteRate": 50.2
+            },
+            {
+              "abzusicherndesRisiko": "ARBEITSUNFAEHIGKEIT",
+              "versicherungssumme": 45678.1,
+              "versicherteRate": 60.2
+            }
+          ]
+        }
+      ]
+    },
+    "bankverbindung": {
+      "iban": "DE1234567890",
+      "bic": "XXXYYYZZ",
+      "kundenreferenzIdsDerKontoinhaber": [
+        "jsonRef1",
+        "jsonRef2"
+      ],
+      "nameKontoinhaberKeinKunde": "Anna Schmidt"
+    }
+  }
+}
